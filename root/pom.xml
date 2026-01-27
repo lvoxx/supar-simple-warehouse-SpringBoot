@@ -100,6 +100,11 @@
                 <artifactId>spring-boot-starter-webflux</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-cassandra</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
 
             <!-- Database Dependencies -->
             <dependency>
@@ -163,6 +168,12 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-webflux-test</artifactId>
+                <scope>test</scope>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-cassandra-test</artifactId>
                 <scope>test</scope>
                 <version>${spring-boot.version}</version>
             </dependency>
