@@ -21,6 +21,8 @@
 
     <!-- PROPERTIES -->
     <properties>
+        <r2dbc-starter.version>1.0.0</r2dbc-starter.version>
+    
         <java.version>25</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -67,6 +69,12 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.github.lvoxx</groupId>
+                <artifactId>r2dbc-starter</artifactId>
+                <version>${r2dbc-starter.version}</version>
             </dependency>
 
             <!-- Spring Boot Dependencies -->
