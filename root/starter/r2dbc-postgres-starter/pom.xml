@@ -13,7 +13,7 @@
     <groupId>io.github.lvoxx</groupId>
     <artifactId>r2dbc-starter</artifactId>
     <version>1.0.0</version>
-    <name>r2dbc-starter</name>
+    <name>r2dbc-postgres-starter</name>
     <description>R2DBC Starter Module</description>
 	
     <dependencies>
