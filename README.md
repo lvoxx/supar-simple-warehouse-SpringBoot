@@ -171,6 +171,23 @@ This platform follows a layered architecture:
 - JWT validation at API Gateway
 - mTLS inside the cluster (via service mesh)
 
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Client
+    participant Gateway as API Gateway
+    participant Keycloak
+    participant Service as Internal Service
+
+    Client->>Gateway: Request + JWT
+    Gateway->>Keycloak: Validate Token
+    Keycloak-->>Gateway: Token OK
+
+    Gateway->>Service: Forward request + X-User-Context
+    Service-->>Gateway: Response
+    Gateway-->>Client: Response
+```
+
 ### Data Stores
 - **PostgreSQL**
   - User management
