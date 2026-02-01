@@ -397,4 +397,4 @@ flowchart LR
 ---
 
 ## 15. License
-MIT
+APACHE
