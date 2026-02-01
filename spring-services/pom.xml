@@ -14,7 +14,7 @@
 	<artifactId>spring-services</artifactId>
 	<version>1.0.0</version>
 	<name>spring-services</name>
-	<description>Root Spring Service for Supar Simple Social Media Developed With Spring Boot</description>
+	<description>Root Spring Service for Supar Simple Social Media Application Developed With Spring Boot</description>
 
 	<url>https://github.com/lvoxx/supar-simple-social-media</url>
 
