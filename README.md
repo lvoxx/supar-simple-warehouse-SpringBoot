@@ -32,9 +32,12 @@ flowchart TB
     %% ===== Edge Layer =====
     subgraph Edge["Edge / Ingress (Kubernetes)"]
         CDN[Cloudflare / CDN]
-        Gateway[API Gateway\n(Spring Cloud Gateway - Reactive)]
-        WSG[WebSocket Gateway\n(Reactive)]
-        Keycloak[Keycloak\nOAuth2 / OIDC]
+        Gateway[API Gateway
+        (Spring Cloud Gateway - Reactive)]
+        WSG[WebSocket Gateway
+        (Reactive)]
+        Keycloak[Keycloak
+        OAuth2 / OIDC]
     end
 
     %% ===== Core Services =====
@@ -68,7 +71,8 @@ flowchart TB
         Cassandra[(Cassandra)]
         Redis[(Redis Cluster)]
         ES[(Elasticsearch)]
-        Cloudinary[Cloudinary\nStatic Assets]
+        Cloudinary[Cloudinary
+        Static Assets]
     end
 
     %% ===== Observability =====
